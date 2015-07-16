@@ -1,36 +1,5 @@
 <?php get_header(); ?>
-<div class="wrapper">
-	<header >
-		<nav class = "nav navbar-default">
-			<div id = "navigation" class="container">
-				<a href = "<?php echo esc_url( home_url( '/' ) ); ?>" title = '<?php bloginfo( 'name' ); ?>' rel="home">
-					<img id="logo" alt="Logo Mundo S A" src = "<?php bloginfo('stylesheet_directory');?>/img/logo.png" />
-				</a>
-				<!-- Brand and toggle get grouped for better mobile display --> 
-				<div class = "navbar-header"> 
-					<button type = "button" class = "navbar-toggle" data-toggle = "collapse" data-target = ".navbar-ex-collapse"> 
-						<span class = "sr-only">Toggle navigation</span> 
-						<span class = "icon-bar"></span> 
-						<span class = "icon-bar"></span> 
-						<span class = "icon-bar"></span> 
-					</button> 
-				</div> 
-				<!-- Collect the nav links, forms, and other content for toggling --> 
-				<div class = "collapse navbar-collapse navbar-right navbar-ex-collapse">
-					<?php /* Primary navigation */
-					wp_nav_menu( array(
-						'menu' => 'top_menu',
-						'depth' => 2,
-						'container' => false,
-						'menu_class' => 'nav navbar-nav',
-				  //Process nav menu using our custom nav walker
-						'walker' => new wp_bootstrap_navwalker())
-					);
-					?>
-				</div>
-			</div>
-		</nav>
-	</header>
+
 	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 		<!-- Indicators -->
 		<ol class="carousel-indicators">
@@ -69,5 +38,58 @@
 			<span class="sr-only">Next</span>
 		</a>
 	</div>
-</div>
+
+<div class="container mundo">
+	<div>
+		<span class="title">NOSSO MUNDO</span>
+	</div>
+
+
+	<div class="row">
+		<div class="col-sm-12 col-md-4">
+			<div class="thumbnail">
+				<img src="<?php bloginfo('stylesheet_directory');?>/img/iconsurgimos.png" alt="Ícone como surgimos">
+				<div class="caption">
+					<h3>Como <br>surgimos</h3>
+					<p>Começamos em 2003 com a proposta de oferecer algo que até então não existia na área de publicidade e propaganda, uma agência especializada apenas em criação, só criação. E com esse objetivo fomos expandindo nosso porfótlio, mas sempre com o foco em criação, design e comunicação. Criando peças e conceitos que até então, eram impraticáveis para pequenas e médias empresas.</p>
+					<!-- <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p> -->
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-12 col-md-4">
+			<div class="thumbnail">
+				<img src="<?php bloginfo('stylesheet_directory');?>/img/iconcomotrabalhamos.png" alt="Ícone como Trabalhamos">
+				<div class="caption">
+					<h3>Como <br>trabalhamos</h3>
+					<p>Primeiro, queremos entender como funciona a empresa, o negócio, o produto e o serviço. Depois, planejamos de forma eficiente e direta o que deve ser feito, desenhamos ideias e criamos conceitos em total parceria com todos os envolvidos no projeto.
+						O bom resultado final da criação e da comunicação, é a união entre as duas partes envolvidas, agência e cliente.</p>
+						<!-- <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p> -->
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-4">
+				<div class="thumbnail">
+					<img src="<?php bloginfo('stylesheet_directory');?>/img/oquefazemos.png" alt="Ícone o que">
+					<div class="caption">
+						<h3>O que <br>fazemos</h3>
+						<p>
+							<li>Logotipos</li>
+							<li>Identidade Visual</li>
+							<li>Campanhas</li>
+							<li>Anúncios</li>
+							<li>Catálogos</li>
+							<li>Material de Ponto de Venda</li>
+							<li>WebSites</li>
+							<li>Redes Sociais</li>
+							<li>Planejamento de Comunicação</li>
+							<li>Editorial: Jornais, Revistas, Relatório Anual</li>
+							<li>Construção de Conceitos Criativos</li>	
+						</p>
+						<!-- <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 <?php get_footer(); ?>
