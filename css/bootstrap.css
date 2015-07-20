@@ -2593,7 +2593,7 @@ fieldset[disabled] .form-control {
   cursor: not-allowed;
 }
 textarea.form-control {
-  height: auto;
+  height: 257px;
 }
 input[type="search"] {
   -webkit-appearance: none;
@@ -3017,9 +3017,9 @@ select[multiple].input-lg {
           user-select: none;
   background-image: none;
   border: 1px solid transparent;
-  border-radius: 4px;
+  /*border-radius: 4px;*/
 }
-.btn:focus,
+/*.btn:focus,
 .btn:active:focus,
 .btn.active:focus,
 .btn.focus,
@@ -3028,7 +3028,7 @@ select[multiple].input-lg {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
-}
+}*/
 .btn:hover,
 .btn:focus,
 .btn.focus {
@@ -3056,9 +3056,9 @@ fieldset[disabled] a.btn {
   pointer-events: none;
 }
 .btn-default {
-  color: #333;
-  background-color: #fff;
-  border-color: #ccc;
+  color: #fff;
+  background-color: #ED6D04;
+  border-color: #ED6D04;
 }
 .btn-default:focus,
 .btn-default.focus {
@@ -4556,7 +4556,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #fff;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #fff;
+  color: grey;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {

@@ -18,6 +18,22 @@ nav {
 	right: 0;
 }
 
+.social a {
+	color: #fff;
+}
+
+.social a:hover {
+	color: #ed6d04;
+}
+
+.social img {
+	margin-top: 6px;
+}
+
+.espaco_topo {
+	height: 150px;
+}
+
 .thumbnail h3 {
 	
 	margin-top: 40px;
@@ -44,6 +60,20 @@ nav {
 	padding-bottom: 10px;
 }
 
+.portifolio {
+	width: auto;
+	height: 100px;
+	background-color: grey;
+}
+
+#Container .mix{
+    display: none;
+}
+
+form {
+	margin-top: 100px;
+}
+
 .contato {
 	background-color: #58595d;
 }
@@ -52,6 +82,17 @@ nav {
     width: 100%;
     height: 500px;
 }
+
+label {
+	color: #fff;
+}
+
+.botao_form {
+  float: right;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
 footer {
 	color: #fff;
 	background-color: #58595B;
