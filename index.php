@@ -41,7 +41,7 @@
 
 <div class="container mundo">
 	<div>
-		<span class="title">NOSSO MUNDO</span>
+		<span class="title">nosso mundo</span>
 	</div>
 
 
