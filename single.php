@@ -1,13 +1,40 @@
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-    <section>
-        <h1><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
-        <p><?php the_content(); ?></p>
-    </section>
+<?php get_header(); ?>
 
-<?php endwhile; else: ?>
-    <div class="artigo">
-        <h2>Nada Encontrado</h2>
-        <p>Erro 404</p>
-        <p>Lamentamos mas não foram encontrados artigos.</p>
-    </div>            
-<?php endif; ?>
+<div style = "widh: 100%; background: #DDD">
+	<?php
+
+	$post = get_post($_POST['id']);
+
+	?>
+
+	<div id="single-post post-<?php the_ID(); ?>">
+
+		<?php while (have_posts()) : the_post(); ?>
+
+			<div class = "conteudo">
+
+				<?php the_content();?>
+
+			</div>
+
+		<?php endwhile;?> 
+
+	</div>
+</div>
+
+<?php include('filtro.php'); ?>
+
+<?php get_footer(); ?>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.1/isotope.pkgd.min.js"></script>
+
+<script src="<?php bloginfo('stylesheet_directory');?>/js/isotope_portifolio.js"></script>
+
+<script>
+	
+	jQuery( document ).ready( function( $ ) {
+	// Relocate Jetpack sharing buttons down into the comments form
+	jQuery( '#sharing' ).html( jQuery( '.sharedaddy' ).detach() );
+	});
+
+</script>

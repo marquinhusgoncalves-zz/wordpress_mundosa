@@ -7,25 +7,21 @@
 		<li data-target="#carousel-example-generic" data-slide-to="1"></li>
 		<li data-target="#carousel-example-generic" data-slide-to="2"></li>
 		<li data-target="#carousel-example-generic" data-slide-to="3"></li>
-		<li data-target="#carousel-example-generic" data-slide-to="4"></li>
 	</ol>
 
 	<!-- Wrapper for slides -->
 	<div class="carousel-inner" role="listbox">
 		<div class="item active">
-			<img src="<?php bloginfo('stylesheet_directory');?>/img/banner/mundosa_banner.jpg" alt="Banner Mundo S A ">
+			<a href="#"><img src="<?php bloginfo('stylesheet_directory');?>/img/banner/mundosa_banner_somague.jpg" alt="Banner Mundo S A"></a>
 		</div>
 		<div class="item">
-			<img src="<?php bloginfo('stylesheet_directory');?>/img/banner/mundosa_banner_somague.jpg" alt="Banner Mundo S A">
+			<a href="<?php bloginfo('url'); ?>/pao-baby-palacio-do-pao/"><img src="<?php bloginfo('stylesheet_directory');?>/img/banner/mundosa_banner_palaciodopao.jpg" alt="Banner Mundo S A"></a>
 		</div>
 		<div class="item">
-			<img src="<?php bloginfo('stylesheet_directory');?>/img/banner/mundosa_banner_palaciodopao.jpg" alt="Banner Mundo S A">
+			<a href="<?php bloginfo('url'); ?>/guia-singrafs/"><img src="<?php bloginfo('stylesheet_directory');?>/img/banner/mundosa_banner_guiasingrafs.jpg" alt="Banner Mundo S A"></a>
 		</div>
 		<div class="item">
-			<img src="<?php bloginfo('stylesheet_directory');?>/img/banner/mundosa_banner_guiasingrafs.jpg" alt="Banner Mundo S A">
-		</div>
-		<div class="item">
-			<img src="<?php bloginfo('stylesheet_directory');?>/img/banner/mundosa_banner_e3gerenciamento.jpg" alt="Banner Mundo S A">
+			<a href="<?php bloginfo('url'); ?>/identidade-e3-gerenciamento/"><img src="<?php bloginfo('stylesheet_directory');?>/img/banner/mundosa_banner_e3gerenciamento.jpg" alt="Banner Mundo S A"></a>
 		</div>
 	</div>
 	<!-- Controls -->
@@ -41,7 +37,7 @@
 
 <div class="container mundo">
 	<div>
-		<span class="title">nosso mundo</span>
+		<span class="title"><strong>nosso mundo</strong></span>
 	</div>
 
 
@@ -70,8 +66,8 @@
 					<img src="<?php bloginfo('stylesheet_directory');?>/img/oquefazemos.png" alt="Ícone o que">
 					<div class="caption">
 						<h3>O que <br>fazemos</h3>
-						<p id="espaco_top">
-						<li>Logotipos</li>
+						<p>
+						<li id="espaco_top">Logotipos</li>
 						<li>Identidade Visual</li>
 						<li>Campanhas</li>
 						<li>Anúncios</li>

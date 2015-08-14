@@ -15,9 +15,6 @@ register_nav_menus(array(
     'mobile' => __( 'Mobile Menu' ),
 ));
 
-//Register custom navigation walker
-    require_once('wp_bootstrap_navwalker.php');
-
 //Imagem destacada
 add_theme_support( 'post-thumbnails' );
 set_post_thumbnail_size( 200, 200 );

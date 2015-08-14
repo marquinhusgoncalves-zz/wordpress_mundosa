@@ -13,7 +13,6 @@
 	<link href="<?php bloginfo('stylesheet_directory');?>/css/bootstrap.css" rel="stylesheet">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" >
-
 	<link href="<?php bloginfo('stylesheet_directory');?>/css/isotope.css" rel="stylesheet">
 
 	<?php wp_head(); ?>
@@ -29,23 +28,7 @@
 				<label class = "toggle visible-xs-inline-block" for = "sidebartoggler"><i class = "fa fa-bars"></i></label>
 				<nav class = "menu_principal sidebar visible-xs-inline-block"><?php wp_nav_menu(''); ?></nav>
 				<nav class = "menu_principal hidden-xs" ><?php wp_nav_menu(''); ?>
-					<!-- <div class="social">
-						<a href="#" class="btn btn-social-icon btn-facebook">
-							<img src="<?php bloginfo('stylesheet_directory');?>/img/iconface.png" />
-						</a>
-						<a href="#" class="btn btn-social-icon btn-twitter">
-							<img src="<?php bloginfo('stylesheet_directory');?>/img/icontwitter.png" />
-						</a>
-						<a href="#" class="btn btn-social-icon btn-issuu">
-							<img src="<?php bloginfo('stylesheet_directory');?>/img/iconissuu.png" />
-						</a>
-						<a href="#" class="btn btn-social-icon btn-behance">
-							<img src="<?php bloginfo('stylesheet_directory');?>/img/iconbehance.png" />
-						</a>
-						<a href="#" class="btn btn-social-icon btn-pinterest">
-							<img src="<?php bloginfo('stylesheet_directory');?>/img/iconpinterest.png" />
-						</a>
-					</div> -->
+			
 				</nav>
 			</div>
 		</header>

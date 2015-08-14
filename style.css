@@ -5,6 +5,12 @@ Author: Marcus Vinicius @marquinhusgonc;
 Description: Tema exclusivo Mundo S/A.
 */
 
+@import url(../mundosa_theme/fonts/font.css);
+
+body {
+	font-family: 'museo_sans300', sans-serif;
+}
+
 /*HEADER*/
 
 #stage {
@@ -20,6 +26,10 @@ header {
 	padding-top: 15px;
 }
 
+strong {
+	font-family: 'museo_sans900', sans-serif;
+}
+
 #carousel-example-generic {
 	margin-top: -130px;
 }
@@ -29,11 +39,23 @@ header {
 	margin-top: 10px;
 }
 
-.home nav ul li a {
+.home nav ul li a{
 	color: #fff;
 }
 
-.home nav a:hover {
+.home nav ul li a:hover{
+	color: #ed6d04;
+}
+
+.home nav ul li a:focus {
+	color: #58595B;	
+}
+
+.home nav ul li a span{
+	color: #58595B;
+}
+
+.home nav ul li a span:hover {
 	color: #ed6d04;
 	text-decoration: none;
 }
@@ -45,6 +67,8 @@ nav {
 
 nav a {
 	color: #58595B;
+	font-family: 'museo_sans500', sans-serif;
+	font-size: 15px;
 }
 
 nav ul li {
@@ -56,14 +80,14 @@ nav a:hover {
 	text-decoration: none;
 }
 
+nav a:focus {
+	color: #58595b;
+}
+
 li.current-menu-item a {
 	color: #ed6d04;
 	border-bottom: 3px solid #ed6d04;
 	padding-bottom: 10px;
-}
-
-.header_menu .container {
-	border-bottom: 1px solid #fff;
 }
 
 .sidebar {
@@ -71,13 +95,13 @@ li.current-menu-item a {
 	position: fixed;
 	top: 0px;
 	bottom: 0;
-	right: -220px;
+	right: -240px;
 	width: 220px;
 	padding: 100px 30px;
-	background: white;
+	background: #ED6D04;
 	z-index: 90;
 	display: none;
-	box-shadow: 0px 2px 12px rgba(128,128,128,0.5);
+	box-shadow: 0px 2px 12px rgba(0,0,0,0.75);
 }
 .toggle {
 	transition: all .15s ease;
@@ -102,7 +126,7 @@ li.current-menu-item a {
 .menu_principal ul li {
 	display: inline-block;
 	list-style: none;
-	padding: 0 15px;
+	padding: 0 4px;
 }
 
 .menu_principal {
@@ -121,16 +145,18 @@ li.current-menu-item a {
 .thumbnail h3 {
 	
 	margin-top: 40px;
+	font-size: 3em;
 }
 
 .thumbnail p {
-	font-size: 16px;
+	font-size: 1.1em;
 	margin-top: 40px;
-	word-spacing: 10px;
+	line-height: 1.9em;
 }
 
 .thumbnail li {
-	font-size: 16px;
+	font-size: 1.1em;
+	line-height: 1.6em;
 }
 
 .mundo {
@@ -148,37 +174,180 @@ li.current-menu-item a {
 
 /*A MUNDO*/
 
-.mundo_brands {
-	/*display: flex;*/
-	margin-top: 40px;
-	text-align: center;
+.equipe {
+	width: 100%;
+	height: 630px;
+	background: #29bdef;
+	position: relative;
+	z-index: 5;
 }
 
-.mundo_brands_single {
+.equipe > div {
+	height: 630px;
+}
+
+.equipe-desc h2 {
+	font-family: 'museo_sans900', sans-serif;
+	font-size: 1.4em;
+	color: white;
+}
+.equipe-desc p {
+	font-family: 'museo_sans500', sans-serif;
+	font-size: 0.9em;
+	color: white;
+	margin-top: -8px;
+}
+
+.individuo {
+	height: 630px;
+}
+
+.wrap {
+	margin: 0 auto; 
+	width: 200px;
+}
+
+.equipe-effect {
+	text-align: center;
+	color: white;
+}
+
+.equipe-effect figcaption {
+	color: white;
+}
+
+.equipe-effect figcaption h3 {
+	font-family: 'museo_sans900', sans-serif;
+	font-size: 1.4em;
+	text-transform: uppercase;
+}
+
+.equipe-effect figcaption a {
+	text-decoration: none;
+}
+
+.equipe-effect .equipe_mask {
+	opacity: 0;
+	overflow: visible;
+	box-sizing: border-box;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	display: table;
+	width: 100%;
+	position: absolute;
+	z-index: 10
+}
+
+.equipe-effect:hover .equipe_mask {
+	opacity: 1;
+	background-color: rgba(0,69,123,0.75);
+	height: 100%;
+}
+
+.over-image {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-size: cover;
+	background-position: center;
+	z-index: 1;
+}
+
+.ju {
+	background-image: url(../mundosa_theme/img/equipe/ju.jpg);
+}
+
+.ale {
+	background-image: url(../mundosa_theme/img/equipe/ale.jpg);
+}
+.dani {
+	background-image: url(../mundosa_theme/img/equipe/dani.jpg);
+}
+
+.marq {
+	background-image: url(../mundosa_theme/img/equipe/marquinhus.jpg);
+}
+
+.mundo_brands {
+	margin: 80px 0;
+    max-width: 1140px;
+    text-align: center;
+    display: table;
+}
+
+.mundo_brands img {
 	display: inline-block;
-	margin: 10px;
+	vertical-align: middle;
+	padding: 22px;
+
+}
+
+/* P O S T A G E N S */
+
+.conteudo {
+	text-align: center;
+}
+.conteudo > div {
+	max-width: 720px;
+	width: 100%;
+	padding-top: 50px;
+	padding-bottom: 70px;
+}
+.conteudo h1 {
+	font-family: 'museo_sans300', sans-serif;
+	text-transform: uppercase;
+	display: inline-block;
+	border-bottom: 10px solid #ED6D05;
+	padding-bottom: 10px;
+}
+.conteudo h1 strong {
+	font-family: 'museo_sans900', sans-serif;
+}
+.conteudo p:first-child {
+	padding-top: 0;
+}
+.conteudo p {
+	font-family: 'museo_sans300', sans-serif;
+	margin-bottom: 0;
+	padding-top: 30px;
+	font-size: 1.4em;
+    text-align: justify;
+}
+.conteudo p strong {
+	font-family: 'museo_sans500', sans-serif;
+}
+.conteudo img {
+	width: 100%;
+	height: auto;
+	padding: 0;
+	margin: 0;
 }
 
 /*PORTIFOLIO*/
 
 #filters {
-	display: table;
-}
-
-#filters li {
-	display: table-cell;
-	vertical-align: middle;
-	padding: 0 20px;
+	width: 100%;
 	height: 90px;
+	margin: 0;
+	padding-left: 0;
+	text-align: center;
 }
-
+#filters li {
+	display: inline-block;
+	text-align: center;
+}
 #filters li:hover {
-	background-color: #ED6D04;
+	background: #ED6D05;
 }
-
 #filters li a {
 	color: white;
 	text-decoration: none;
+	font-size: 22px;
+	text-transform: uppercase;
+	display: table-cell;
+	height: 90px;
+	vertical-align: middle;
+	padding: 0 20px;
 }
 
 .itens {
@@ -194,12 +363,12 @@ li.current-menu-item a {
 	display: inline-block;
 	text-decoration: none;
 }
-.item:hover [class*="blur"] {
-	-webkit-filter: blur(20px);
-	-moz-filter: blur(15px);
-	-o-filter: blur(15px);
-	-ms-filter: blur(15px);
-	filter: blur(15px);
+.item:hover [class*="over"] {
+	-webkit-filter: grayscale(1);
+	-moz-filter: grayscale(1);
+	-o-filter: grayscale(1);
+	-ms-filter: grayscale(1);
+	filter: grayscale(1);
 	opacity: 0.95;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -210,22 +379,45 @@ li.current-menu-item a {
 	text-align: center;
 	color: white;
 }
+
 .third-effect figcaption {
-	padding: 30px 70px;
 	color: white;
 }
+
+.third-effect figcaption h3 {
+	font-family: 'museo_sans900', sans-serif;
+	font-size: 1.4em;
+	text-transform: uppercase;
+	margin-bottom: 50px;
+}
+
 .third-effect figcaption a {
 	text-decoration: none;
 }
+
 .third-effect .mask {
 	opacity: 0;
-	overflow:visible;
-	box-sizing:border-box;
-	transition: all 0.4s ease;
+	overflow: visible;
+	box-sizing: border-box;
+	transition: all 0.2s ease;
+	display: table;
+	width: 100%;
+	position: absolute;
+	z-index: 10
 }
+
 .third-effect:hover .mask {
 	opacity: 1;
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(0,0,0,0.75);
+	height: 100%;
+}
+
+.mais {
+	width: 100px;
+	padding: 8px 14px;
+	border: solid 2px #ED6D05;
+	position: absolute;
+	bottom: 70px;
 }
 
 /*FORMULARIO*/
@@ -236,6 +428,20 @@ form {
 
 .contato {
 	background-color: #58595d;
+}
+
+.alert-success {
+	color: #ed6d04;
+	background-color: #fff;
+	border-color: #fff;
+}
+
+.alert-success .alert-link {
+	color: #ed6d04;
+}
+
+.alert {
+	margin-top: 20px;
 }
 
 #map-canvas {
@@ -261,8 +467,9 @@ footer {
 	align-items:center;
 	color: #fff;
 	background-color: #58595B;
-	font-size: 12px;
+	font-size: 16px;
 	text-align: center;
+	height: 100px;
 }
 
 footer > img {
@@ -272,6 +479,89 @@ footer > img {
 
 .bold {
 	font-weight: bold;
+}
+
+/* SCROOL */
+
+.scroll-to-top {
+	width: 40px;
+	height: 40px;
+	position: fixed;
+	bottom: 4%;
+	right: 2%;
+	background: rgba(30, 30, 30, 0.4);
+	color: #FFF;
+	cursor: pointer;
+	display: none;
+	z-index: 99;
+	font-size: 16px;
+	text-align: center;
+	padding-top: 8px;
+	padding-right: 2px;
+	-webkit-transition: background-color 0.3s linear;
+	-moz-transition: background-color 0.3s linear;
+	-o-transition: background-color 0.3s linear;
+	transition: background-color 0.3s linear;
+}
+.scroll-to-top:hover {
+	background: black;
+	opacity: .8;
+}
+
+@media (max-width: 767px) {
+	#menu-menu {
+		padding-left: 0;
+		text-align: center;
+	}
+
+	nav a {
+		font-size: 25px;
+		color: #fff;
+	}
+
+	nav a span {
+		color: #000;
+	}
+
+	.home nav ul li a {
+		color: #fff;
+	}
+	
+	.home nav ul li a span {
+		color: #000;
+	}
+
+	li.current-menu-item a {
+		color: #fff;
+	}
+
+	.menu_principal ul li {
+		display: block; 
+		padding: 0; 
+	}
+
+	nav ul li {
+		display: block; 
+	}
+
+	.equipe > div {
+		height: 315px;
+	}
+
+	.equipe > div > div {
+		height: 315px;
+	}
+
+	.individuo a {
+		height: 315px !important;
+	}
+
+	.individuo figcaption img {
+		display: none;
+	}
+	.wrap > p {
+		display: none;
+	}
 }
 
 @media (max-width: 991px) {
@@ -287,4 +577,13 @@ footer > img {
 	.thumbnail h3 {
 		margin-left: 180px;
 	}
+
+	#espaco_top {
+		padding-top: 30px;
+	}
+
+	.wrap {
+		width: 180px;
+	}
+
 }
