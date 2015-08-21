@@ -2,7 +2,7 @@
 
 <div class = "equipe">
 	<div class = "container">
-		<div class = "col-xs-6 col-sm-3 equipe-effect">
+		<div class = "col-xs-12 col-sm-3 equipe-effect">
 			<div class = "individuo">
 				<a href = "#" class = "equipe_mask equipe_mask_style" style = "display: table; width: 100%; height: 630px; position: absolute; z-index: 10">
 					<figcaption style = "display: table-cell; vertical-align: middle">
@@ -16,7 +16,7 @@
 				<div class = "over-image ju" ></div>
 			</div>
 		</div>
-		<div class = "col-xs-6 col-sm-3 equipe-effect">
+		<div class = "col-xs-12 col-sm-3 equipe-effect">
 			<div class = "individuo">
 				<a href = "#" class = "equipe_mask" style = "display: table; width: 100%; height: 630px; position: absolute; z-index: 10">
 					<figcaption style = "display: table-cell; vertical-align: middle">
@@ -30,7 +30,7 @@
 				<div class = "over-image ale"></div>
 			</div>
 		</div>
-		<div class = "col-xs-6 col-sm-3 equipe-effect">
+		<div class = "col-xs-12 col-sm-3 equipe-effect">
 			<div class = "individuo">
 				<a href = "#" class = "equipe_mask" style = "display: table; width: 100%; height: 630px; position: absolute; z-index: 10">
 					<figcaption style = "display: table-cell; vertical-align: middle">
@@ -44,7 +44,7 @@
 				<div class = "over-image dani"></div>
 			</div>
 		</div>
-		<div class = "col-xs-6 col-sm-3 equipe-effect">
+		<div class = "col-xs-12 col-sm-3 equipe-effect">
 			<div class = "individuo">
 				<a href = "#" class = "equipe_mask" style = "display: table; width: 100%; height: 630px; position: absolute; z-index: 10">
 					<figcaption style = "display: table-cell; vertical-align: middle">
@@ -78,9 +78,9 @@
 			<div class="thumbnail">
 				<div class="caption">
 					<p>Nosso Portfólio apresenta bem todos os projetos no qual nos envolvemos, começando pela diversidade de segmentos: alimentação, cosméticos, automotivo, serviços, engenharia, consultorias, entre outros.
-						Nosso trabalho começa desde a reestilização de logotipo, ao posicionamente da empresa ou produtoo no mercado.</p>
-					</div>
+Nosso trabalho começa desde a reestilização de logotipo, ao posicionamente da empresa ou produtoo no mercado.</p>
 				</div>
+			</div>
 		</div>
 		<div class="col-sm-12 col-md-4">
 			<div class="thumbnail">
@@ -89,9 +89,12 @@
 				</div>
 			</div>
 		</div>
+	
+		
 		<div style="text-align: center;">
 			<span class="title"><strong>clientes</strong></span>
 		</div>
+
 		<div class="col-sm-12 mundo_brands">
 			<img src="<?php bloginfo('stylesheet_directory');?>/img/brands/logopalacio.png" class="img-responsive" alt="Palácio do Pão">
 			<img src="<?php bloginfo('stylesheet_directory');?>/img/brands/logolobo.png" class="img-responsive" alt="Lobo Assessoria">
@@ -110,7 +113,9 @@
 			<img src="<?php bloginfo('stylesheet_directory');?>/img/brands/logovcl.png" class="img-responsive" alt="VCL Serviços">
 			<img src="<?php bloginfo('stylesheet_directory');?>/img/brands/logotheodora.png" class="img-responsive" alt="Theodora Confeitaria">
 		</div>
+
 	</div> <!-- row -->
+
 </div> <!-- container -->
 
 <?php get_footer(); ?>

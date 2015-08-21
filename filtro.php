@@ -1,8 +1,8 @@
 <div class = "main">
-	<div style = "background-color: dimgrey">
+	<div class = "scroll" style = "background-color: #58595b">
 		<ul id = "filters" class = "container" style = "margin-bottom: 0">
 			<li><a href = "#" data-filter = "*" class = "selected" style = "padding-top: 5px; font-family: 'museo_sans900', sans-serif;">tudo</a></li>
-			
+			<li><a href = "#" data-filter = ".logos" class = "logos-text" style = "padding-top: 5px; font-family: 'museo_sans900', sans-serif;">logos</a></li>			
 			<?php
 				$terms = get_terms("category", "wpds_tax_pic");// get all categories, but you can use any taxonomy
 				$count = count($terms); //How many are they?
@@ -13,9 +13,9 @@
 						"</a></li>\n";
 					}
 				}
-				?>
-			</ul>
-		</div>
+			?>
+		</ul>
+	</div>
 
 		<?php $the_query = new WP_Query( 'posts_per_page=50' ); //Check the WP_Query docs to see how you can limit which posts to display ?>
 		<?php if ( $the_query->have_posts() ) : ?>
@@ -32,7 +32,7 @@
 			
 			<div class = "<?php echo $termsString; ?> itens item col-xs-12 col-sm-6 col-md-4 col-lg-3 third-effect"> <?php // 'item' is used as an identifier (see Setp 5, line 6) ?>
 				
-				<a href = "<?php the_permalink(); ?>" class = "mask" rel = "<?php the_ID(); ?>" title = "<?php the_title(); ?>" style = "display: table; width: 100%; height: 300px; position: absolute; z-index: 10">
+				<a href = "<?php the_permalink(); ?>" class = "mask bar" rel = "<?php the_ID(); ?>" title = "<?php the_title(); ?>" style = "display: table; width: 100%; height: 300px; position: absolute; z-index: 10">
 					<figcaption style = "display: table-cell; vertical-align: middle">
 						<h3><?php the_title(); ?></h3>
 						<div style="margin: 0 auto; width: 100px">
@@ -50,5 +50,4 @@
 		<?php endwhile;  ?>
 	</div> <!-- end isotope-list -->
 <?php endif; ?>
-
 </div>
