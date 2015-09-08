@@ -15,7 +15,7 @@ if($_POST[sent]){
  $ph_email = "Coloque um e-mail válido";
  }
  if(!trim($_POST[your_tel])){
- $ph_message = "Falta sua mensagem";
+ $ph_tel = "Falta sua mensagem";
  }
  if(!trim($_POST[your_message])){
  $ph_message = "Falta sua mensagem";
@@ -24,7 +24,7 @@ if($_POST[sent]){
  $ph_subject = "Seria bom saber o assunto";
  }
  if(!$error){
- $email = wp_mail(get_option("admin_email"),trim($_POST[your_name])." enviou uma mensagem do site ".get_option("blogname"),stripslashes(trim($_POST[your_message])),"From: ".trim($_POST[your_name])." <".trim($_POST[your_email]).">\r\nReply-To:".trim($_POST[your_email]));
+ $email = wp_mail(get_option("admin_email"),trim($_POST[your_name])." enviou uma mensagem do site ".get_option("blogname"),"Nome: " . stripslashes(trim($_POST[your_name])) . "\r\nTelefone: " . stripslashes(trim($_POST[your_tel])) . "\r\nMensagem: " . stripslashes(trim($_POST[your_message])),"From: ". trim($_POST[your_name])." <".trim($_POST[your_email]).">\r\nReply-To:".trim($_POST[your_email]));
  }
 }
 get_header(); ?>

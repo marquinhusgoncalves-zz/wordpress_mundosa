@@ -14,8 +14,6 @@
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" >
 
-	<link href="<?php bloginfo('stylesheet_directory');?>/css/isotope.css" rel="stylesheet">
-
 	<?php wp_head(); ?>
 </head>
 
@@ -23,11 +21,11 @@
 	<div id="stage">
 		<header class = "header_menu">
 			<div class = "container">
-				<a style = "display: inline-block" href = "<?php echo esc_url( home_url( '/' ) ); ?>"><img id = "logo" src = "<?php bloginfo('stylesheet_directory');?>/img/logo.png" alt = ""></a>
+				<a style = "display: inline-block" href = "<?php echo esc_url( home_url( '/' ) ); ?>"><img id = "logo" src = "<?php bloginfo('stylesheet_directory');?>/img/logo.png" alt = "logo mmundo s a"></a>
 				<input	type = "checkbox" id = "sidebartoggler" name = "" value = "">	
-				<label class = "toggle visible-xs-inline-block" for = "sidebartoggler"><i class = "fa fa-bars"></i></label>
-				<nav class = "menu_principal sidebar visible-xs-inline-block"><?php wp_nav_menu(''); ?></nav>
-				<nav class = "menu_principal hidden-xs" ><?php wp_nav_menu(''); ?></nav>
+				<label class = "toggle visible-xs-inline-block visible-sm-inline-block" for = "sidebartoggler"><i class = "fa fa-bars"></i></label>
+				<nav class = "menu_principal sidebar visible-xs-inline-block visible-sm-inline-block"><?php wp_nav_menu(''); ?></nav>
+				<nav class = "menu_principal hidden-xs hidden-sm" ><?php wp_nav_menu(''); ?></nav>
 			</div>
 		</header>
 

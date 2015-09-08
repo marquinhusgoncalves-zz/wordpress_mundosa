@@ -21,7 +21,7 @@
 			<a href="<?php bloginfo('url'); ?>/guia-de-beneficios-singrafs/"><img src="<?php bloginfo('stylesheet_directory');?>/img/banner/mundosa_banner_guiasingrafs.jpg" alt="Banner Mundo S A"></a>
 		</div>
 		<div class="item">
-			<a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('stylesheet_directory');?>/img/banner/mundosa_banner_e3gerenciamento.jpg" alt="Banner Mundo S A"></a>
+			<a href="<?php bloginfo('url'); ?>/identidade-e3-gerenciamento/"><img src="<?php bloginfo('stylesheet_directory');?>/img/banner/mundosa_banner_e3gerenciamento.jpg" alt="Banner Mundo S A"></a>
 		</div>
 	</div>
 	<!-- Controls -->
