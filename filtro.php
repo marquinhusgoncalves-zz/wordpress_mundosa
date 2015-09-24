@@ -1,20 +1,28 @@
-<div class = "main">
-	<div class = "scroll" style = "background-color: #58595b">
-		<ul id = "filters" class = "container" style = "margin-bottom: 0">
-			<li><a href = "#" data-filter = "*" class = "selected" style = "padding-top: 5px; font-family: 'museo_sans900', sans-serif;">tudo</a></li>
-			<li><a href = "#" data-filter = ".logos" class = "logos-text" style = "padding-top: 5px; font-family: 'museo_sans900', sans-serif;">logos</a></li>			
-			<?php
-				$terms = get_terms("category", "wpds_tax_pic");// get all categories, but you can use any taxonomy
-				$count = count($terms); //How many are they?
-				if ( $count > 0 ){  //If there are more than 0 terms
-					foreach ( $terms as $term ) {  //for each term:
-						echo "<li><a href='#' class = " . $term->slug . " data-filter='.".$term->slug."'>"
-						."<img src='".wpds_tax_pic_url($term->term_id)."' />".
-						"</a></li>\n";
-					}
-				}
-			?>
-		</ul>
+<div class="main">
+	<div class="brand">
+		<div class="container">
+			<div class="scroll">
+				<div class="scroll-left"><i class="fa fa-chevron-circle-left"></i></div>
+					<ul id="filters" class="container" style="margin-bottom: 0">
+						<div class="scrolling">
+							<li><a href="#" data-filter="*" class="selected">tudo</a></li>
+							<li><a href="#" data-filter=".logos" class="logos-text">logos</a></li>			
+							<?php
+								$terms = get_terms("category", "wpds_tax_pic");// get all categories, but you can use any taxonomy
+								$count = count($terms); //How many are they?
+								if ( $count > 0 ){  //If there are more than 0 terms
+									foreach ( $terms as $term ) {  //for each term:
+										echo "<li><a href='#' class = " . $term->slug . " data-filter='.".$term->slug."'>"
+										."<img src='".wpds_tax_pic_url($term->term_id)."' />".
+										"</a></li>\n";
+									}
+								}
+							?>
+						</div>
+					</ul>
+				<div class="scroll-right"><i class="fa fa-chevron-circle-right"></i></div>
+			</div>
+		</div>
 	</div>
 
 		<?php $the_query = new WP_Query( 'posts_per_page=50' ); //Check the WP_Query docs to see how you can limit which posts to display ?>

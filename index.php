@@ -7,11 +7,15 @@
 		<li data-target="#carousel-index" data-slide-to="1"></li>
 		<li data-target="#carousel-index" data-slide-to="2"></li>
 		<li data-target="#carousel-index" data-slide-to="3"></li>
+		<li data-target="#carousel-index" data-slide-to="4"></li>
 	</ol>
 
 	<!-- Wrapper for slides -->
 	<div class="carousel-inner" role="listbox">
 		<div class="item active">
+			<a href="<?php bloginfo('url'); ?>/catalogo-de-produtos-bridgestone"><img src="<?php bloginfo('stylesheet_directory');?>/img/banner/mundosa_banner_bridgestone.jpg" alt="Banner Mundo S A"></a>
+		</div>
+		<div class="item">
 			<a href="<?php bloginfo('url'); ?>/catalogo-somague-mph/"><img src="<?php bloginfo('stylesheet_directory');?>/img/banner/mundosa_banner_somague.jpg" alt="Banner Mundo S A"></a>
 		</div>
 		<div class="item">

@@ -110,7 +110,7 @@ li.current-menu-item a {
 .menu_principal ul li {
 	display: inline-block;
 	list-style: none;
-	padding: 0 4px;
+	padding: 0 7px;
 }
 .menu_principal {
 	display: -webkit-box;
@@ -283,11 +283,12 @@ body.home > div > header {
 }
 /*PORTIFOLIO*/
 #filters {
-	width: 100%;
+	width: 90%;
 	height: 90px;
-	margin: 0;
-	padding-left: 0;
+	margin: 0 auto;
 	text-align: center;
+	overflow: hidden;
+	position: relative;
 }
 #filters li {
 	display: inline-block;
@@ -297,6 +298,7 @@ body.home > div > header {
 	background: #ED6D05;
 }
 #filters li a {
+	font-family: 'museo_sans900', sans-serif;
 	color: white;
 	text-decoration: none;
 	font-size: 22px;
@@ -304,7 +306,7 @@ body.home > div > header {
 	display: table-cell;
 	height: 90px;
 	vertical-align: middle;
-	padding: 0 20px;
+	padding: 5px 20px 0;
 }
 .itens {
 	height: 300px;
@@ -329,6 +331,37 @@ body.home > div > header {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
+}
+.brand {
+	background-color: #58595b;
+}
+.scroll {
+	position: relative;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.scrolling {
+	position: absolute;
+	width: 80%;
+}
+.scroll-left,
+.scroll-right  {
+	position: absolute;
+	top: 28px;
+	color: #fff;
+	font-size: 2em;
+	cursor: pointer;
+	 z-index: 100;	
+}
+.scroll-left {
+	left: 1px;
+}
+.scroll-right {
+	right: 8px;
+}
+.fa-chevron-circle-left:hover,
+.fa-chevron-circle-right:hover {
+	color: #ED6D05;
 }
 .third-effect {
 	text-align: center;
@@ -497,7 +530,6 @@ footer > img {
 	nav a span {
 		color: #000;
 	}
-	
 	.home nav ul li a span {
 		color: #000;
 	}
@@ -507,9 +539,6 @@ footer > img {
 	nav ul li {
 		display: block; 
 	}
-	/*.home nav ul li a {
-		color: #fff;
-	}*/
 	.thumbnail {
 		margin-top: 30px;
 		margin-bottom: 0;
@@ -519,6 +548,9 @@ footer > img {
 	}
 	.thumbnail h3 {
 		margin-left: 180px;
+	}
+	#filters {
+    	width: 80%;
 	}
 	.wrap {
 		width: 180px;
