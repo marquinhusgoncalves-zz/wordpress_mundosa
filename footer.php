@@ -5,7 +5,7 @@
 				<p style = "display: inline-block; color: white">&copy; <?php echo date('Y'); ?> | <span itemprop="name"><?php bloginfo('name'); ?></span></p>
 				<img style = "height: 35px; margin: 10px; display: inline-block" src = "<?php bloginfo('stylesheet_directory');?>/img/logorodape.png" alt = "Mundo S.A">	
 			</div>
-			<p class = "col-sm-8" style = "display: inline-block; color: white; text-align: center; padding-top: 20px" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="streetAddress">Av. Imperatriz Leopoldia, 454 sala 32 <br/></span> Nova Petrópolis - <span itemprop="addressLocality">S.B.Campo - SP </span><br/> <span itemprop="telephone">(11) <strong>4330-5822</strong> | <strong>4332-7634</strong></span></p>
+			<p class = "col-sm-8" style = "display: inline-block; color: white; text-align: center; padding-top: 20px" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="streetAddress">Av. Imperatriz Leopoldina, 454 sala 32 <br/></span> Nova Petrópolis - <span itemprop="addressLocality">S.B.Campo - SP </span><br/> <span itemprop="telephone">(11) <strong>4330-5822</strong> | <strong>4332-7634</strong></span></p>
 		</div>
 
 		<div class = "hidden-xs hidden-lg clearfix" itemscope itemtype="http://schema.org/Organization">
@@ -13,13 +13,13 @@
 				<p style = "display: inline-block; color: white">&copy; <?php echo date('Y'); ?> | <span itemprop="name"><?php bloginfo('name'); ?></span></p>
 				<img style = "height: 35px; margin: 0 10px; display: inline-block" src = "<?php bloginfo('stylesheet_directory');?>/img/logorodape.png" alt = "Mundo S.A">	
 			</div>
-			<p class = "col-sm-8" style = "display: inline-block; color: white" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="streetAddress">Av. Imperatriz Leopoldia, 454 sala 32 <br/></span> Nova Petrópolis - <span itemprop="addressLocality">São Bernardo do Campo - SP </span><br/> <span itemprop="telephone">(11) <strong>4330-5822</strong> | <strong>4332-7634</strong></span></p>
+			<p class = "col-sm-8" style = "display: inline-block; color: white" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="streetAddress">Av. Imperatriz Leopoldina, 454 sala 32 <br/></span> Nova Petrópolis - <span itemprop="addressLocality">São Bernardo do Campo - SP </span><br/> <span itemprop="telephone">(11) <strong>4330-5822</strong> | <strong>4332-7634</strong></span></p>
 		</div>
 
 		<div class = "hidden-xs hidden-sm hidden-md" itemscope itemtype="http://schema.org/Organization">
 			<p style = "display: inline-block; color: white">&copy; <?php echo date('Y'); ?> | <span itemprop="name"><?php bloginfo('name'); ?></span></p>
 			<img style = "height: 35px; margin: 0 10px; display: inline-block" src = "<?php bloginfo('stylesheet_directory');?>/img/logorodape.png" alt = "Mundo S.A">
-			<p style = "display: inline-block; color: white" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="streetAddress">Av. Imperatriz Leopoldia, 454 sala 32 </span>- Bairro Nova Petrópolis - <span itemprop="addressLocality">São Bernardo do Campo - São Paulo </span>| <span itemprop="telephone">(11) <strong>4330-5822</strong> | <strong>4332-7634</strong></span></p>
+			<p style = "display: inline-block; color: white" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="streetAddress">Av. Imperatriz Leopoldina, 454 sala 32 </span>- Bairro Nova Petrópolis - <span itemprop="addressLocality">São Bernardo do Campo - São Paulo </span>| <span itemprop="telephone">(11) <strong>4330-5822</strong> | <strong>4332-7634</strong></span></p>
 		</div>
 	</footer>
 </div><!--div stage-->

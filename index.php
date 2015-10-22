@@ -67,7 +67,7 @@
 				<img src="<?php bloginfo('stylesheet_directory');?>/img/oquefazemos.png" alt="Ícone o que">
 				<div class="caption">
 					<h3>O que <br>fazemos</h3>
-					<p>
+					<ul>
 					<li>Logotipos</li>
 					<li>Identidade Visual</li>
 					<li>Campanhas</li>
@@ -79,7 +79,7 @@
 					<li>Planejamento de Comunicação</li>
 					<li>Editorial: Jornais, Revistas, Relatório Anual</li>
 					<li>Construção de Conceitos Criativos</li>	
-					</p>
+					</ul>
 				</div>
 			</div>
 		</div>

@@ -33,19 +33,19 @@ get_header(); ?>
   <div class="container">
     
     <?php if($email){ ?>
-          <div class = "alert alert-success" role = "alert" data-dismiss = "alert">
-            <a href = "#" class = "alert-link">Muito obrigado! Seu e-mail foi enviado com sucesso.</a>
+          <div class="alert alert-success" role="alert" data-dismiss="alert">
+            <a href="#" class="alert-link">Muito obrigado! Seu e-mail foi enviado com sucesso.</a>
           </div>
         <?php } else { if($error) { ?>
-          <div class = "alert alert-warning" role = "alert" data-dismiss = "alert">
-            <a href = "#" class = "alert-link">Precisa preencher por completo.</a>
+          <div class="alert alert-warning" role="alert" data-dismiss="alert">
+            <a href="#" class="alert-link">Precisa preencher por completo.</a>
           </div>
         <?php echo $error; ?>
         
         <?php } else { the_content(); } ?>
 
         <?php if( $post_response ) : ?>
-          <div class = "alert alert-<?php echo $post_response->status ?>">
+          <div class="alert alert-<?php echo $post_response->status ?>">
             <?php echo $post_response->message ?>
           </div>
         <?php endif ?>

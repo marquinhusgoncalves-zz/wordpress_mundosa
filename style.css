@@ -134,13 +134,13 @@ body.home > div > header {
 	margin-top: 40px;
 	font-size: 3em;
 }
-.thumbnail p {
+.thumbnail p, .thumbnail ul {
 	font-size: 1.1em;
 	margin-top: 40px;
 	line-height: 1.9em;
 }
 .thumbnail li {
-	font-size: 1.1em;
+	/*font-size: 1.1em;*/
 	line-height: 1.6em;
 }
 .mundo {
