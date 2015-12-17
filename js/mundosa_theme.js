@@ -1,9 +1,9 @@
 <!-- Transform sociais icons -->
 $(document).ready(function() {
-		$('.menu_principal ul li.menu-item-15 a').html('<span class="fa-stack fa-md"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span>');
-		$('.menu_principal ul li.menu-item-16 a').html('<span class="fa-stack fa-md"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span>');
-		$('.menu_principal ul li.menu-item-17 a').html('<span class="fa-stack fa-md"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-behance fa-stack-1x fa-inverse"></i></span>');
-		$('.menu_principal ul li.menu-item-18 a').html('<span class="fa-stack fa-md"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-pinterest-p fa-stack-1x fa-inverse"></i></span>');
+		$('.--menu-principal ul li.menu-item-15 a').html('<span class="fa-stack fa-md"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span>');
+		$('.--menu-principal ul li.menu-item-16 a').html('<span class="fa-stack fa-md"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span>');
+		$('.--menu-principal ul li.menu-item-17 a').html('<span class="fa-stack fa-md"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-behance fa-stack-1x fa-inverse"></i></span>');
+		$('.--menu-principal ul li.menu-item-18 a').html('<span class="fa-stack fa-md"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-pinterest-p fa-stack-1x fa-inverse"></i></span>');
 		$('.scroll ul li a.logos').hide();
 	}
 );

@@ -13,13 +13,13 @@
 	<!-- Wrapper for slides -->
 	<div class="carousel-inner" role="listbox">
 		<div class="item active">
-			<a href="<?php bloginfo('url'); ?>/catalogo-de-produtos-bridgestone"><img src="<?php bloginfo('stylesheet_directory');?>/img/banner/mundosa_banner_bridgestone.jpg" alt="Banner Mundo S A"></a>
-		</div>
-		<div class="item">
-			<a href="<?php bloginfo('url'); ?>/catalogo-somague-mph/"><img src="<?php bloginfo('stylesheet_directory');?>/img/banner/mundosa_banner_somague.jpg" alt="Banner Mundo S A"></a>
+			<a href="<?php bloginfo('url'); ?>/crossfit-sao-bernardo"><img src="<?php bloginfo('stylesheet_directory');?>/img/banner/mundosa_banner_crossfit.jpg" alt="Banner Mundo S A"></a>
 		</div>
 		<div class="item">
 			<a href="<?php bloginfo('url'); ?>/campanha-pao-baby-palacio-do-pao/"><img src="<?php bloginfo('stylesheet_directory');?>/img/banner/mundosa_banner_palaciodopao.jpg" alt="Banner Mundo S A"></a>
+		</div>
+		<div class="item">
+			<a href="<?php bloginfo('url'); ?>/catalogo-de-produtos-bridgestone"><img src="<?php bloginfo('stylesheet_directory');?>/img/banner/mundosa_banner_bridgestone.jpg" alt="Banner Mundo S A"></a>
 		</div>
 		<div class="item">
 			<a href="<?php bloginfo('url'); ?>/guia-de-beneficios-singrafs/"><img src="<?php bloginfo('stylesheet_directory');?>/img/banner/mundosa_banner_guiasingrafs.jpg" alt="Banner Mundo S A"></a>
