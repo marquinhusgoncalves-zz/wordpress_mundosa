@@ -38,7 +38,7 @@
 
 			<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
 			
-			<div class = "<?php echo $termsString; ?> itens item col-xs-12 col-sm-6 col-md-4 col-lg-3 third-effect"> <?php // 'item' is used as an identifier (see Setp 5, line 6) ?>
+			<div class = "<?php echo $termsString; ?> itens item col-xs-6 col-sm-6 col-md-4 col-lg-3 third-effect"> <?php // 'item' is used as an identifier (see Setp 5, line 6) ?>
 				
 				<a href = "<?php the_permalink(); ?>" class = "mask bar" rel = "<?php the_ID(); ?>" title = "<?php the_title(); ?>" style = "display: table; width: 100%; height: 300px; position: absolute; z-index: 10">
 					<figcaption style = "display: table-cell; vertical-align: middle">

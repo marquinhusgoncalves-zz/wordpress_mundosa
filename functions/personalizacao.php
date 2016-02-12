@@ -7,7 +7,7 @@
         background-size: 260px auto;
         width: 320px;
     }
-</style>
+    </style>
 <?php }
 add_action( 'login_enqueue_scripts', 'my_login_logo' );
 

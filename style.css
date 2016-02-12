@@ -554,6 +554,9 @@ footer > img {
 	}
 }
 @media (max-width: 480px) {
+	.itens {
+		height: 150px;
+	}
 	.item a img {
 		max-width: 150% !important;
     	margin-left: -28%;
